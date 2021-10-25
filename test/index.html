@@ -1,0 +1,62 @@
+  <body>
+    <div class='myblock'>
+    <div class='myvideo'>
+   <iframe class='embs' src="https://www.youtube.com/embed/IMVdkW_d0Xs?autoplay=1&amp;loop=1&amp;enablejsapi=1&amp;&amp;playerapiid=featuredytplayer&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;iv_load_policy=3&amp;theme=light&amp;wmode=transparent&amp;origin=https://dt.partners&amp;playlist=IMVdkW_d0Xs&amp;mute=1" frameborder="0" allow="autoplay" id="pot" data-gtm-yt-inspected-1_25="true"></iframe></div></div>
+  </body>
+
+<style>
+ 
+.myblock{
+  text-align: center;
+  background: green;
+  position: relative;
+  padding-top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transform-origin: center center;
+}
+
+.myvideo {
+  -webkit-mask-box-image: url(https://files.dt.partners/Union.svg);
+   max-height: calc(min(50vw,90vh));
+   max-width: 50vw;
+   width:  998px;
+   height :  815px;
+   background: red;
+   box-sizing:border-box;
+  background-size: contain;
+        }
+
+.embs {
+  background-color: blue;
+  overflow: hidden;
+  max-height: calc(min(50vw,90vh));
+   width:  calc(min(50vw,90vh)/0.55);
+  height :  815px;
+}
+
+#pot {
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 8.5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: -25%;
+  }
+  25% {
+    left: -10%;
+  }
+  50% {
+    left: -15%;
+  }
+  75% {
+    left: -30%;
+  }
+  100% {
+    left: -25%;    
+  }
+}
+
+</style>
